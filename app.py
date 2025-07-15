@@ -77,7 +77,7 @@ if st.button("Generate Persona"):
     if not username:
         st.warning("Please enter a username.")
     else:
-        with st.spinner("🔍 Scraping Reddit..."):
+        with st.spinner("Scraping Reddit..."):
             posts, comments = fetch_reddit_data(username)
 
         if not posts and not comments:
